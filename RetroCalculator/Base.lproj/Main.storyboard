@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="JKB-EU-bw9"/>
@@ -230,10 +230,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oU-UZ-fC9">
+                                <state key="normal" backgroundImage="clear"/>
+                                <connections>
+                                    <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmk-4g-Vsv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JKB-EU-bw9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0HI-8j-Ch9"/>
+                            <constraint firstItem="8oU-UZ-fC9" firstAttribute="top" secondItem="k4t-nj-JOv" secondAttribute="bottom" constant="26" id="3ce-X1-Htt"/>
                             <constraint firstItem="x1t-J3-6ML" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="52e-cu-dui"/>
                             <constraint firstAttribute="bottom" secondItem="QXB-z7-7ig" secondAttribute="bottom" constant="20" symbolic="YES" id="8kS-Nt-toW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JKB-EU-bw9" secondAttribute="bottom" id="93r-HR-ZXT"/>
@@ -242,7 +249,10 @@
                             <constraint firstItem="eS4-tC-x3g" firstAttribute="centerY" secondItem="QXB-z7-7ig" secondAttribute="centerY" id="9a0-XG-EEQ"/>
                             <constraint firstItem="hft-zO-WnT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9hN-rH-8Zl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hft-zO-WnT" secondAttribute="bottom" id="FAu-iK-ZQh"/>
+                            <constraint firstItem="8oU-UZ-fC9" firstAttribute="leading" secondItem="QXB-z7-7ig" secondAttribute="leading" id="GTH-Rq-IsY"/>
+                            <constraint firstItem="8oU-UZ-fC9" firstAttribute="trailing" secondItem="QXB-z7-7ig" secondAttribute="trailing" id="MZK-3A-5vu"/>
                             <constraint firstAttribute="trailing" secondItem="JKB-EU-bw9" secondAttribute="trailing" id="Mo5-w2-9z4"/>
+                            <constraint firstItem="QXB-z7-7ig" firstAttribute="top" secondItem="8oU-UZ-fC9" secondAttribute="bottom" constant="-3" id="MoS-ZE-pEW"/>
                             <constraint firstItem="JKB-EU-bw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OLN-1c-t9Q"/>
                             <constraint firstItem="QXB-z7-7ig" firstAttribute="centerX" secondItem="hft-zO-WnT" secondAttribute="centerX" id="Smi-GA-Lgy"/>
                             <constraint firstItem="x1t-J3-6ML" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TpU-3I-0Aw"/>
@@ -262,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="122.28260869565219"/>
+            <point key="canvasLocation" x="114.375" y="121.47887323943662"/>
         </scene>
     </scenes>
     <resources>
@@ -278,6 +288,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
